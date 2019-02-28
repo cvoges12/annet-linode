@@ -11,7 +11,7 @@
   };
 
   networking = {
-    hostname = "annet-linode";
+    hostName = "annet-linode";
     usePredictableInterfaceNames = false;
   };
 
