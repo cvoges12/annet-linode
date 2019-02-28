@@ -4,21 +4,14 @@
   imports = [
     ./hardware-configuration.nix
     ./network.nix
+    ./users.nix
+    ./packages.nix
   ];
 
   services.openssh = {
     enable = true;
     permitRootLogin = "yes";
   };
-
-  environment.systemPackages = with pkgs; [
-    git
-    inetutils
-    mtr
-    vim
-    (import ./nvim.nix)
-    sysstat
-  ];
 
   time.timeZone = "America/Chicago";
 
