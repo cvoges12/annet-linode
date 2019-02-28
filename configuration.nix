@@ -3,16 +3,12 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./network.nix
   ];
 
   services.openssh = {
     enable = true;
     permitRootLogin = "yes";
-  };
-
-  networking = {
-    hostName = "annet-linode";
-    usePredictableInterfaceNames = false;
   };
 
   environment.systemPackages = with pkgs; [
