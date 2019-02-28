@@ -5,10 +5,9 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   services.openssh = {
     enable = true;
@@ -24,9 +23,9 @@
     git
     inetutils
     mtr
+    vim
     (import ./nvim.nix)
     sysstat
-    vim
   ];
 
   # networking.hostName = "nixos"; # Define your hostname.
@@ -46,12 +45,6 @@
   # Set your time zone.
   # time.timeZone = "Europe/Amsterdam";
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  # environment.systemPackages = with pkgs; [
-  #   wget vim
-  # ];
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -67,21 +60,6 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
-
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
-
-  # Enable sound.
-  # sound.enable = true;
-  # hardware.pulseaudio.enable = true;
-
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
-  # services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "eurosign:e";
-
-  # Enable touchpad support.
-  # services.xserver.libinput.enable = true;
 
   # Enable the KDE Desktop Environment.
   # services.xserver.displayManager.sddm.enable = true;
