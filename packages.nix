@@ -9,4 +9,4 @@
     (import ./nvim.nix)
     sysstat
   ];
-}:
+}
