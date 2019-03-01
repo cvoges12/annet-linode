@@ -6,3 +6,4 @@ ToDo
 ----
 * add wireguard
 * firewall
+* config proper ssh
