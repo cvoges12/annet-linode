@@ -3,6 +3,6 @@
 {
   services.openssh = {
     enable = true;
-    permitRootLogin = "yes";
+    permitRootLogin = "no";
   };
 }
