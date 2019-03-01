@@ -9,6 +9,11 @@
       allowedTCPPorts = [ 22 53 67 68 80 443 ];
       allowedUDPPorts = [ 22 53 67 68 80 443 ];
     };
+    #interfaces.eth0.ipv4.addresses = [
+    #  { address = "";
+    #    prefixLength = "24";}
+    #];
+    nameservers = [ "1.1.1.1" ];
     #wireguard.interfaces.wg0 = {
     #  ips = [ "" ];
     #  listenPort = null;
