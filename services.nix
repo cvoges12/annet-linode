@@ -3,6 +3,7 @@
 {
   services.openssh = {
     enable = true;
+    allowSFTP = true;
     permitRootLogin = "no";
   };
 }
