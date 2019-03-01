@@ -20,7 +20,7 @@
     #  #    prefixLength = 64;}
     #  #];
     #};
-    #nameservers = [ "1.1.1.1" ];
+    nameservers = [ "1.1.1.1" ];
     #wireguard.interfaces.wg0 = {
     #  ips = [ "" ];
     #  listenPort = null;

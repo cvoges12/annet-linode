@@ -8,5 +8,6 @@
     vim
     (import ./nvim.nix)
     sysstat
+    wireguard-tools
   ];
 }
