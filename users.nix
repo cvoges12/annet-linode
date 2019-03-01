@@ -17,6 +17,6 @@
         home-manager
       ];
     };
-    defaultUserShell = "/run/current-system/sw/bin/zsh";
+    defaultUserShell = pkgs.zsh;
   };
 }
