@@ -3,7 +3,7 @@
 {
   networking = {
     hostName = "annet-linode";
-    usePredictableInterfaceNames = false;
+    usePredictableInterfaceNames = true;
     firewall = {
       enable = false;
       allowedTCPPorts = [ 22 53 67 68 80 443 ];
