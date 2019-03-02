@@ -10,16 +10,6 @@
       allowedUDPPorts = [ 22 53 67 68 80 443 ];
     };
     enableIPv6 = true;
-    #interfaces.eth0 = {
-    #  ipv4.addresses = [
-    #    { address = "45.79.141.88";
-    #      prefixLength = 24;}
-    #  ];
-    #  #ipv6.addresses = [
-    #  #  { address = "2600:3c03:f03c:91ff:fe23:7c68";
-    #  #    prefixLength = 64;}
-    #  #];
-    #};
     nameservers = [ "1.1.1.1" ];
     #wireguard.interfaces.wg0 = {
     #  ips = [ "" ];
