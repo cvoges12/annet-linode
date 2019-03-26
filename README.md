@@ -1,6 +1,6 @@
 Annet Linode
 ============
-**System configuration for nixOS on the Linode (w/ VPN)**
+**System configuration for [NixOS](https://nixos.org/) on Linode (w/ VPN)**
 
 Features
 --------
