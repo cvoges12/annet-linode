@@ -5,7 +5,6 @@
     hostName = "annet-linode";
     usePredictableInterfaceNames = true;
     firewall = {
-      enable = false;
       allowedTCPPorts = [ 22 53 67 68 80 443 ];
       allowedUDPPorts = [ 22 53 67 68 80 443 ];
     };
